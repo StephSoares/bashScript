@@ -1,0 +1,314 @@
+#! /bin/bash
+
+echo -e "\033[1;4;36mChoissez une baguette :\033[0m";
+
+echo -e "\033[1;4;31mChoissez le bois de votre baguette :\033[0m";
+choice="";
+
+select choice in "Sapin" "Chène" "Erable";do
+  case $choice in
+    "Sapin" ) choice="Sapin";break;;
+    "Chène" ) choice="Chène";break;;
+    "Erable" ) choice="Erable";break;;
+  esac
+done
+
+if [ "$choice" == "Sapin" ]
+then
+    echo -e "\033[31mVous avez choisi le Sapin\033[0m"
+
+elif [ "$choice" == "Chène" ]
+then
+    echo -e "\033[31mVous avez choisi le Chène\033[0m"
+elif [ "$choice" == "Erable" ]
+then
+    echo -e "\033[31mVous avez choisi l'Erable\033[0m"
+fi
+
+
+echo -e "\033[1;4;32mChoissez la longueur de votre baguette :\033[0m";
+choice2="";
+
+select choice2 in "20cm" "30cm" "35cm";do
+  case $choice2 in
+    "20cm" ) choice="20cm";break;;
+    "30cm" ) choice="30cm";break;;
+    "35cm" ) choice="35cm";break;;
+  esac
+done
+
+if [ "$choice2" == "20cm" ]
+then
+    echo "Vous avez choisi 20cm"
+
+elif [ "$choice2" == "30cm" ]
+then
+    echo "Vous avez choisi 30cm"
+elif [ "$choice2" == "35cm" ]
+then
+    echo "Vous avez choisi 35cm"
+fi
+
+echo -e "\033[1;4;34mChoissez le coeur de votre baguette :\033[0m";
+choice3="";
+
+select choice3 in "Crin de Sombral" "Ventricule de dragon" "Plume de phénix";do
+  case $choice3 in
+    "Crin de Sombral" ) choice="Crin de Sombral";break;;
+    "Ventricule de dragon" ) choice="Ventricule de dragon";break;;
+    "Plume de phénix" ) choice="Plume de phénix";break;;
+  esac
+done
+
+if [ "$choice3" == "Crin de Sombral" ]
+then
+    echo "Consiédéré comme digne des sorciers ayant vaincu la mort."
+
+elif [ "$choice3" == "Ventricule de dragon" ]
+then
+    echo "Puissant pour l'apprentissage de sortilèges"
+elif [ "$choice3" == "Plume de phénix" ]
+then
+    echo "Offre un large éventail de capacités magiques."
+fi
+
+echo -e "\033[1;4;35mChoissez la couleur de votre baguette :\033[0m";
+choice4="";
+
+select choice4 in "Marron foncée" "Noire" "Marron claire";do
+  case $choice4 in
+    "Marron foncée" ) choice="Marron foncée";break;;
+    "Noire" ) choice="Noire";break;;
+    "Marron claire" ) choice="Marron claire";break;;
+  esac
+done
+
+if [ "$choice4" == "Marron foncée" ]
+then
+    echo "Vous avez choisi la couleur Marron foncée"
+
+elif [ "$choice4" == "Noire" ]
+then
+    echo "Vous avez choisi la couleur Noire"
+elif [ "$choice4" == "Marron claire" ]
+then
+    echo "Vous avez choisi la couleur Marron claire"
+fi
+
+echo -e "\033[1;4;31mVoulez-vous que votre baguette soit puissante ? :\033[0m";
+choice5="";
+
+select choice5 in "Oui" "Non" "Moyen";do
+  case $choice5 in
+    "Oui" ) choice="Oui";break;;
+    "Non" ) choice="Non";break;;
+    "Moyen" ) choice="Moyen";break;;
+  esac
+done
+
+if [ "$choice5" == "Oui" ]
+then
+    echo "Vous faites bien, une baguette doit être puissante."
+
+elif [ "$choice5" == "Non" ]
+then
+    echo "Comment ça non ? C'est une blague j'espère ?!"
+elif [ "$choice5" == "Moyen" ]
+then
+    echo "Vous n'avez pas tord, vous êtes très prudent."
+fi
+
+
+echo -e "\033[1;4;32mSavez-vous comment se servir d'une baguette ? :\033[0m";
+choice6="";
+
+select choice6 in "Oui" "Non";do
+  case $choice6 in
+    "Oui" ) choice="Oui";break;;
+    "Non" ) choice="Non";break;;
+  esac
+done
+
+if [ "$choice6" == "Oui" ]
+then
+    echo "Vous êtes donc très fort en magie alors."
+
+elif [ "$choice6" == "Non" ]
+then
+    echo "Vous apprendrez plus tard ..."
+fi
+
+echo -e "\033[1;4;33mConnaissez-vous des sorts ? :\033[0m";
+choice7="";
+
+select choice7 in "Oui" "Non";do
+  case $choice7 in
+    "Oui" ) choice="Oui";break;;
+    "Non" ) choice="Non";break;;
+  esac
+done
+
+if [ "$choice7" == "Oui" ]
+then
+    echo "Vous avez toutes les possibilités pour devenir un bon sorcier"
+
+elif [ "$choice7" == "Non" ]
+then
+    echo "Vous trouverez la bonne école."
+fi
+
+
+echo -e "\033[1;4;31mAvez-vous déjà pratiqué de la magie ? :\033[0m";
+choice8="";
+
+select choice7 in "Oui" "Non";do
+  case $choice7 in
+    "Oui" ) choice="Oui";break;;
+    "Non" ) choice="Non";break;;
+  esac
+done
+
+if [ "$choice7" == "Oui" ]
+then
+    echo "Vous en connaissez donc un rayon sur les sortillèges"
+
+elif [ "$choice7" == "Non" ]
+then
+    echo "Vous deviendrez fort un jour!"
+fi
+
+
+echo -e "\033[1;4;34mÊtes vous un sang mêlé ou un pur sorcier ? :\033[0m";
+choice9="";
+
+select choice9 in "sang mêlé" "pur sorcier";do
+  case $choice9 in
+    "sang mêlé" ) choice="sang mêlé";break;;
+    "pur sorcier" ) choice="pur sorcier";break;;
+  esac
+done
+
+if [ "$choice9" == "sang mêlé" ]
+then
+    echo "Vous avez une force incroyable"
+
+elif [ "$choice9" == "pur sorcier" ]
+then
+    echo "Personne peut vous arrêter"
+fi
+
+echo -e "\033[1;4;35mChoisissez votre école de magie ? :\033[0m";
+choice10="";
+
+select choice10 in "Poudlard" "Beauxbâtons" "Durmstrang";do
+  case $choice10 in
+    "Poudlard" ) choice="Poudlard";break;;
+    "Beauxbâtons" ) choice="Beauxbâtons";break;;
+    "Durmstrang" ) choice="Durmstrang";break;;
+  esac
+done
+
+if [ "$choice10" == "Poudlard" ]
+then
+    echo "La meilleure école de magie du monde des sorciers"
+
+elif [ "$choice10" == "Beauxbâtons" ]
+then
+    echo "Vous allez pas le regretter ..."
+elif [ "$choice10" == "Durmstrang" ]
+then
+    echo "Euh ...Pas très bon choix"
+fi
+
+cat << "EOF"
+
+                                                                                              oddo
+                                                                                            `shhd/
+                                                                                           `shdd:
+                                                                                          .yhdd:
+                                                                                         .yhdd:
+                                                                                        -yhdd:
+                                                                                       -hhdd:
+                                                                                      :hhdd:
+                                                                                     /hhdd:
+                                                                                    /hhdd:
+                                                                                   +hhdd:
+                                                                                 `ohhdd:
+                                                                                `ohhdd:
+                                                                               `shhdd:
+                                                                              .shhmd:
+                                                                             .yhhmd:
+                                                                            .yhdmd/
+                                                                           -yhdmd:
+                                                                          :yhdmd:
+                                                                         :hhdmd:
+                                                                        /hhdmd/
+                                                                       +hhdmd/
+                                                                     `+hhdmd/
+                                                                    `ohhdmd/
+                                                                   `ohhdmd/
+                                                                  `shhdmh/
+                                                                 .shhdmh/
+                                                                .yhhdmh/
+                                                               -yhhdmh/
+                                                              -yhhdmh/
+                                                             :hhhmmh/
+                                                            /hhhmmh:
+                                                           /hhhmmh:
+                                                         `+hhhmmh:
+                                                        -oyyhdmh:
+                                                      `+hhhdddh:
+                                                     -sydydmmhs
+                                                    :hhyhydddh:
+                                                   -hyyyhyhdh/
+                                                  -shyyhdddh:
+                                                 /yyhyhddhh:
+                                                +hhyhyhddy+
+                                               :hhhhhhhdy:
+                                              +yddhdmddy-
+                                            `sdhhyhmmhh:
+                                           `ydhhhyhNmy/
+                                          `+ddhdmddmh-
+                                         .shdhhdNdds.
+                                       `+hdhhshmmhh-
+                                       /yhhhhdmddy:
+                                    ``/syhhhdmmdh:
+                                  :ohhhssyyhdmhso`
+                                  hyddddhhddhhy:
+                                  sydddhhdmmdhy.
+                                 /hddddddmNmdhh/
+                                /hddddhdmNmhhys.
+                               +hddddhdmNmhs-`
+                             `+hddddhdmNmho`
+                            `ohdddhhdmNmho`
+                           `ohdhhhhdmNmho`
+                          `ohhhhyyhmmdho`
+                         .shhhyyshdmdho`
+                        .syyyyssyhdhyo`
+                       .syyyyssyhdhy+`
+                      -syyyyssyhhhy+`
+                     -syyyyssyhhhy+`
+                    :yyyyyssyhhhy+
+                   :yyyysssyhhhy/
+                  :yyyysssyhhhy/
+                 /yyyysssyhdhy/
+               `/yhyyssshddhy/
+              `+hhhhysshddhy/
+             `+hdhhysyhddhy/
+            `oddddhsydmmhy/
+           `oddddhsymNmdy:
+          .sddddhsymNNdy:
+         .sddddysymNNdh:
+        .yddddysymNNdy:
+       -yddddyohmNNdy-
+      -yddddsohmNNdy-
+   `-/yhdddsohmNmdy.
+   :/ydhyssyhmNmdy.
+   `-+hs`.ohdddhy.```` ``
+   -.-:-`:hddyyy/.........```````````````````
+   `-/o+::/s-.-s+---------............```````````
+    `:shh/..-//:----.............``````````````
+     ``-:::--...`````````````````
+          ``
+EOF
+
